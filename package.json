@@ -1,6 +1,13 @@
 {
   "name": "js-parser-combinators",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pokle/js-parser-combinators"
+  },
+  "bugs": {
+    "url": "https://github.com/pokle/js-parser-combinators/issues"
+  },
   "main": "parser.js",
   "license": "MIT",
   "scripts": {
