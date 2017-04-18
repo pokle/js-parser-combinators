@@ -2,6 +2,8 @@
 
 Building blocks to write your own tiny and fast parsers.
 
+[![CircleCI](https://circleci.com/gh/pokle/js-parser-combinators.svg?style=svg&circle-token=e1ed0f751c2b44469e534ee8d709112ef5732245)](https://circleci.com/gh/pokle/js-parser-combinators)
+
 ```js
 const P = require('js-parser-combinators')
 
