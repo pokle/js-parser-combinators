@@ -1,6 +1,6 @@
 {
   "name": "js-parser-combinators",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/pokle/js-parser-combinators"
