@@ -2,8 +2,7 @@
 
 Building blocks to write your own tiny and fast parsers.
 
-<script src="https://embed.runkit.com" data-element-id="example1"></script>
-<div id="example1">
+```js
 const P = require('js-parser-combinators')
 
 // A parser that can parse paths such as:
@@ -21,4 +20,5 @@ const parser = P.exhaustive(
 );
 
 parser({ input: '/user/1234/details' }).ast
-</div>
+```
+[Run this example on RunKit](https://runkit.com/pokle/js-parser-combinators-example1)
