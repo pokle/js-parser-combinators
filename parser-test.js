@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const {literal, optional, and, param} = require('./parser');
+const {literal, optional, seq, param} = require('./parser');
 
 describe('parse literal', () => {
   const blahParser = literal('blah');
@@ -43,8 +43,8 @@ describe('parse optional', () => {
   });
 });
 
-describe('parse and', () => {
-  const parser = and(literal('a'), literal('b'), literal('c'));
+describe('parse seq', () => {
+  const parser = seq(literal('a'), literal('b'), literal('c'));
 
   it('should parse abcd, leaving behind d', () => {
     expect(parser({input: 'abcd', ast: {}})).to.deep.equal({

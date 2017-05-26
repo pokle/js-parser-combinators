@@ -22,7 +22,7 @@ function optional(child) {
   };
 }
 
-function and() {
+function seq() {
   const children = arguments;
   return function(arg) {
     let nextArg = arg;
@@ -35,6 +35,20 @@ function and() {
     }
     return nextArg;
   };
+}
+
+function or() {
+  const children = arguments;
+  return function(arg) {
+    for(let i=0; i < children.length; i++) {
+      const child = children[i];
+      const childResult = child(arg);
+      if (!childResult.error) {
+        return childResult;
+      }
+    }
+    return nextArg;
+  };  
 }
 
 function assoc(obj, key, val) {
@@ -72,7 +86,8 @@ function exhaustive(child) {
 module.exports = {
   literal,
   optional,
-  and,
+  seq,
+  or,
   param,
   exhaustive
 };
