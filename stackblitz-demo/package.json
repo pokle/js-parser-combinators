@@ -1,0 +1,7 @@
+{
+  "name": "js-parser-combinators-demo",
+  "private": true,
+  "dependencies": {
+    "js-parser-combinators": "latest"
+  }
+}

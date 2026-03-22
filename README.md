@@ -24,4 +24,4 @@ const parser = P.exhaustive(
 parser({ input: '/user/1234/details' }).ast
 // => { userid: 1234 }
 ```
-[Run this example on RunKit](https://runkit.com/pokle/js-parser-combinators-example1)
+[Try it live on StackBlitz](https://stackblitz.com/github/pokle/js-parser-combinators/tree/master/stackblitz-demo?file=index.js)
